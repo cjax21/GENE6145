@@ -1,5 +1,5 @@
 # GENE6145
-for all data and changes to project files
+Hello and welcome to our project page! Here, myself and two members of my Data Management and Visualization course will publish all data sources and scripts for our final project. 
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/25423296/163456776-7f95b81a-f1ed-45f7-b7ab-8fa810d529fa.png">
