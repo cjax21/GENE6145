@@ -20,6 +20,9 @@ age_groups = pd.cut(df['Age'], [0, 34, 55, np.inf], labels=['Adult', 'Middle-age
 pca = PCA(n_components=2)
 principal_components = pca.fit_transform(df.iloc[:, 1:])
 
+# Get the explained variance ratio
+explained_var_ratio = pca.explained_variance_ratio_
+
 # Create a new DataFrame with the principal components and age groups
 pca_df = pd.DataFrame(data=principal_components, columns=['PC1', 'PC2'])
 pca_df['Age Group'] = age_groups.values
@@ -38,3 +41,6 @@ ax.legend()
 
 # Show the plot
 plt.show()
+
+# Print the explained variance ratio
+print('Explained variance ratio:', explained_var_ratio)
