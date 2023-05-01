@@ -6,9 +6,9 @@ import matplotlib.pyplot as plt
 from extract import extract_data
 
 # Load dataset
-from data_source import test_rows_labels
-data = test_rows_labels
-df = pd.read_csv(data)
+from preprocessing.extract import extract_data
+data = 'https://github.com/cjax21/GENE6145/blob/main/data_source/test_rows_labels.csv'
+df = extract_data(data)
 
 # df = pd.read_csv(fp + "test_rows_labels.csv", sep = "\t")
 # df
