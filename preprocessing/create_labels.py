@@ -9,7 +9,7 @@ import pandas as pd
 
 
 
-def EncoderPlot(dataframe: Literal[pd.DataFrame], strategy=Union[str,None], n_bins: int, pallette):
+def EncoderPlot(dataframe: Literal[pd.DataFrame], strategy=Union[Literal[str],None], n_bins: int, pallette):
     """
     EncoderPlot returns the transformed sparse matrix of the 
 
@@ -52,7 +52,7 @@ def EncoderPlot(dataframe: Literal[pd.DataFrame], strategy=Union[str,None], n_bi
     plt.ylabel("")
     plt.title("After Binning")
     
-    plt.savefig(strategy+'_plot.pdf', dpi = 330)
+    plt.savefig('encoded_plot.pdf', dpi = 330)
     
     plt.show()
     
