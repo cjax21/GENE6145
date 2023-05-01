@@ -30,9 +30,12 @@ def EncoderPlot(dataframe: Literal[pd.DataFrame], strategy=Union[Literal[str],No
         _description_
     """
     
+    
+    
+    
     idx = dataframe.columns.get_loc('age')
     encoder = ColumnTransformer(transformers = [
-        ("equalwidth", KBinsDiscretizer(strategy = strategy, n_bins=n_bins, encode = "ordinal"), [idx])
+        ("equalwidth", KBinsDiscretizer(strategy = strategy, n_bins=n_bins, encode = "ordinal", random_state=42), [idx])
     ])
     
     data = encoder.transform(dataframe)
