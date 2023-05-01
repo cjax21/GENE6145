@@ -1,4 +1,5 @@
 import pandas as pd
+from pandas.core.frame import DataFrame
 import numpy as np
 from sklearn.preprocessing import KBinsDiscretizer
 from sklearn.compose import ColumnTransformer
@@ -9,7 +10,7 @@ import pandas as pd
 
 
 
-def EncoderPlot(dataframe: Literal[pd.DataFrame], strategy=Union[Literal[str],None], n_bins: int, pallette):
+def EncoderPlot(dataframe: DataFrame, strategy=Union[Literal[str],None], n_bins: int, pallette=):
     """
     EncoderPlot returns the transformed sparse matrix of the 
 
