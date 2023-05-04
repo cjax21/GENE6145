@@ -29,7 +29,7 @@ num_cols = 4
 num_rows = len(df.columns[:13]) // num_cols + 1
 
 # Define the list of colors
-colors = ['#7AD151FF' if i+1 in [1, 2, 4, 8, 11, 13] else '#440154FF' for i in range(len(df.columns[:]))]
+colors = ['#7AD151FF' if i+1 in [1, 2, 4, 8, 9, 11, 13] else '#440154FF' for i in range(len(df.columns[:]))]
 
 # Create a figure with a subplot grid
 fig, axes = plt.subplots(num_rows, num_cols, figsize=(16, 8))
