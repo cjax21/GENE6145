@@ -1,1 +1,5 @@
 data preprocessing/.DS_Store
+.DS_Store
+preprocessing/__pycache__/__init__.cpython-39.pyc
+preprocessing/data_source/__pycache__/__init__.cpython-39.pyc
+visualizations/__pycache__/__init__.cpython-39.pyc
