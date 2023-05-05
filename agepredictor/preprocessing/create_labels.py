@@ -1,5 +1,6 @@
 import pandas as pd
 from pandas.core.frame import DataFrame
+from pandas.core.series import Series
 import numpy as np
 from sklearn.preprocessing import KBinsDiscretizer
 from sklearn.compose import ColumnTransformer
@@ -7,10 +8,15 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from typing import Sequence, Literal, List, Union, Iterable
 import pandas as pd
+from source.extract import rnaseq_df, methylation_train_rows_df, methylation_test_rows_labels_df, methylation_test_rows_df   
+import matplotlib.pyplot as plt
+from genpipes import declare
 
 
+@declare.generator()
 
-def EncoderPlot(dataframe: DataFrame, strategy=Union[Literal[str],None], n_bins: int, pallette=):
+    
+def EncoderPlot(dataframe: DataFrame, strategy=Union[Literal[str],None], n_bins: int,):
     """
     EncoderPlot returns the transformed sparse matrix of the 
 

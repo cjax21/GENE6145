@@ -1,17 +1,13 @@
 # import libraries
-import pandas as pd 
-import numpy as np
-from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
-from extract import extract_data
+import numpy as np
+import pandas as pd
+from sklearn.decomposition import PCA
 
 # Load dataset
-from preprocessing.extract import extract_data
-data = 'https://github.com/cjax21/GENE6145/blob/main/data_source/test_rows_labels.csv'
-df = extract_data(data)
+from source.extract import methylation_test_rows_labels_df
 
-# df = pd.read_csv(fp + "test_rows_labels.csv", sep = "\t")
-# df
+df = methylation_test_rows_labels_df()
 
 # Define age groups based on age values
 age_groups = pd.cut(df['Age'], [0, 34, 55, np.inf], labels=['Adult', 'Middle-aged', 'Elderly'])
