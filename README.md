@@ -1,5 +1,7 @@
 # GENE6145
-Hello and welcome to our project page! Here, myself and two members of my Data Management and Visualization course will publish all data sources and scripts for our final project. Our goal was to analyze RNA-seq data to identify a gene signature.
+Hello and welcome to our project page! Here, myself and two members of my Data Management and Visualization course will publish all data sources and scripts for our final project. Our goal was to analyze a dataset of RNA-seq expression profiles of 100 patients from ages 18-69 and propose a model to predict age based on those profiles. 
+
+Here's a link to the data source: [https://www.kaggle.com/datasets/thedevastator/age-prediction-for-individuals-using-multi-omic](https://zenodo.org/records/2545213)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/25423296/163456776-7f95b81a-f1ed-45f7-b7ab-8fa810d529fa.png">
